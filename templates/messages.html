@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta name="theme-color" content="#21DA75"/>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/bundle.css">
+        <link rel="stylesheet" href="{% static '/css/messages.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Anylease | Messages</title>
+    </head>
+    <body class="dashboard">
+        <div class="side_nav selected_Home">
+            <div class="__nav">
+                <h3 class="desk" id="toHome"><a  id="anylease" href="{% url 'index' %}"><img class="anyLimage" src="{% static '/assets/anyLimage.png' %}" alt="" srcset=""></a></h3>
+                <a href="{% url 'client_page' %}" class="Home"><img src="./../assets/Home.svg"/></a>`
+                <a href="{% url 'notify' %}" class="Notification"><img src="./../assets/Notification.svg"/></a>`
+                <a href="/lender_dashboard/Upload.html" class="Upload"><img src="./../assets/Upload.svg"/></a>`
+                <a href="{% url 'settings' %}" class="Setting"><img src="./../assets/Setting.svg"/></a>`
+                <a href="{% url 'messages' %}" class="Message"><img src="./../assets/Message.svg"/></a>`
+
+
+            </div>
+
+        </div>
+        <div class="side_nav_mob"></div>
+
+
+        <section class="lender_dashboard messages">
+            <div class="avatar _avatar">
+
+                <h3>
+                    <i class="fa fa-bars nav-menu" style="font-size:16px" ></i>
+                    <b class="cancel" style="font-size:24px; margin-left: -20px; margin-right: 24px; padding: 4px;">&times;</b>
+                    AnyLease</h3>
+                <div class="avatar-group">
+                    <p></p>
+                  
+                    
+                </div>
+
+            </div>
+            <main class="_main">
+               
+                <div class="messagePage">
+                    <!-- start here -->
+
+                    <div class="messageHead">
+                            <!-- profile name -->
+                        <div class="profileImg">
+                            <img src="{% static '/assets/Avatar.png' %}" alt="Profile Image">
+                            <span class="span">Paul Mikie</span>
+                        </div>
+                            <!-- Options -->
+                        <div class="messageOptions">
+                            <img src="assets/searchicon.svg" alt="Search Icon">
+                            <img src="assets/messageOption.svg" alt="More Options">
+                        </div>
+                    </div> <!-- End of message head -->
+
+                            <!-- Message content -->
+                    <div class="messageContent">
+                        <div class="chat chat_dark">
+                            <p>Hi! I'm Mrs Smith. I just rented your Nikon Camera</p>
+                        </div>
+
+                        <div class="chat chat_light">
+                            <p>Hello ma'am. Thanks for your purchase.</p>
+                        </div>
+
+                        <div class="chat chat_dark">
+                            <p>I'll like the item to be delivered to me. Do you have a rider you use</p>
+                        </div>
+
+                        <div class="chat chat_light">
+                            <p>Yes I do.</p>
+                        </div>
+
+                        <div class="chat chat_light">
+                            <p>should it be delivered to the address you filled in your info?</p>
+                        </div>
+
+                        <div class="chat chat_dark">
+                            <p>Yes, That same asddress.</p>
+                        </div>
+
+                        <div class="chat chat_light">
+                            <p>Alright ma'am!</p>
+                        </div>
+
+                        <div class="chat chat_light">
+                            <p>I'll be sending you a copy of the ssign aggreement for you to sign on.</p>
+                        </div>
+
+                        <div class="chat chat_dark">
+                            <p>Yes, Read that as part of the leasing process</p>
+                        </div>
+
+                    </div> <!-- end of messageContent -->
+
+                    <div class="messageSend">
+                        <div class="messageAttachment">
+                           <img src="assets/messageEmoji.svg" alt="Emoji">
+                           <img src="assets/messageAttachment.svg" alt="Attachment">
+                        </div>
+
+                        <form>
+                            <input type="text" placeholder="Type a message">
+                            <img src="" alt="send">
+                        </form>
+                    </div>
+
+
+                </div>
+            
+            </main>
+
+        </section>
+
+        <script src="/js/bundle.js"></script>
+    </body>
+</html>

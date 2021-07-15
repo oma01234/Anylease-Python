@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        
+        <meta name="theme-color" content="#21DA75"/>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+	   <link rel="stylesheet" href="{% static '/css/client_page.css' %}">
+	   <link rel="stylesheet" href="{% static '/css/details.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Anylease | Lender Dashboard - Home</title>
+    </head>
+   
+   <style>
+    button {
+	    background-color: green;
+	    border-radius: 8px;
+	    color: #fff;
+	    font-weight: 600;
+	    font-size: 1em;
+	    padding: 1.3em 1.6em;
+	    outline: none;
+	    border: none;
+	    cursor: pointer;
+	    margin-top: 2em;
+	}
+   </style>
+   
+    <body class="dashboard">
+       
+        
+        <div class="side_nav selected_Home">
+            <div class="__nav">
+                <h3 class="desk" id="toHome">AnyLease</h3>
+                <a href="/lender_dashboard/" class="Home"><img src="./../assets/Home.svg"/></a>`
+                <a href="{% url 'notify' %}" class="Notification"><img src="./../assets/Notification.svg"/></a>`
+                <a href="#" class="Upload"><img src="./../assets/Upload.svg"/></a>`
+                <a href="{% url 'settings' %}" class="Setting"><img src="./../assets/Setting.svg"/></a>`
+                <a href="{% url 'messages' %}" class="Message"><img src="./../assets/Message.svg"/></a>`
+
+
+            </div>
+
+        </div>
+        
+        <div class="side_nav_mob"></div>
+        
+        <div class="collapse navbar-collapse" id="myNavbar">
+		  <div class="nav navbar-nav navbar-right">
+			  <span><b>Hello, {{ request.username }}</b></span>
+		  </div>
+		</div>
+
+        <section class="lender_dashboard">
+            <div class="avatar">
+                <h3>
+                    <i class="fa fa-bars nav-menu" style="font-size:16px" ></i>
+                    <b class="cancel" style="font-size:24px; margin-left: -20px; margin-right: 24px; padding: 4px;">&times;</b>
+                    AnyLease</h3>
+                <div class="avatar-group">
+                    <p></p>
+                    <img src="./../assets/Avatar.png" alt="">
+                </div>
+	            <div>
+					<a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-out"></span><button>Logout</button></a>
+			    </div>
+
+            </div>
+            <main>
+                <h2>Leased Equipment</h2>
+                <p>View all your recently leased equipment</p>
+
+                <section class="leased_products"></section>
+                <a href="{% url 'home1' %}">
+                    <button>Lease new equipment</button>
+                </a>
+            </main>
+
+        </section>
+
+        <script src="/js/bundle.js"></script>
+    </body>
+</html>

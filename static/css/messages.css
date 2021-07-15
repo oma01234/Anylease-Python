@@ -1,0 +1,203 @@
+:root{
+    --theme-green: #03a84e;
+    --light-green: #edfcf1;
+    --body-text: #191414;
+    --input-stroke: #6c6c6c8c;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", "open Sans";
+}
+._avatar{
+    display: none !important;
+}
+
+._main{
+    padding: 0 !important;
+}
+
+div.messagePage{
+    height: 100vh;
+}
+
+    /* Message head */
+div.messageHead{
+    display: flex;
+    padding: 1.3em 2em;
+    justify-content: space-between;
+    box-shadow: 0 1px 5px 1px rgba(3, 168, 77, .2);
+}
+
+div.messageHead .profileImg{
+    display: flex;
+}
+
+div.messageHead .profileImg img{
+    width: 15%;
+}
+
+div.messageHead .profileImg .span{
+    margin: .8em .5em;
+    color: green;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+div.messageOptions{
+    display: flex;
+    width: 20%;
+    height: 5vh;
+    margin: .6em 0;
+}
+
+body > section > main > div > div.messageHead > div.messageOptions > img:nth-child(1){
+    width: 40%;
+}
+
+body > section > main > div > div.messageHead > div.messageOptions > img:nth-child(2){
+    transform: rotate(90deg);
+    width: 55%;
+    opacity: .8;
+}
+/* end of message head */
+
+    /* message content */
+div.messageContent{
+    height: 75%;
+    padding: .5em 1em;
+    overflow-y: scroll;
+}
+
+div.chat{
+    padding: 1em;
+    width: 70%;
+    margin: 2em 0;
+    border-radius: 15px;
+}
+
+div.chat p{
+    line-height: 1.5em;
+    background: transparent;
+}
+
+div.chat.chat_dark{
+    background: green;
+    color: #fff;
+    margin-left: 30%;
+}
+
+div.chat.chat_light{
+    background: lightgreen;
+    color: #000;
+    margin-right: 30%;
+}/* end of message content */
+
+    /* message send content */
+div.messageSend{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 1em;
+    box-shadow: 0 -1px 5px 1px rgba(3, 168, 77, .2);
+}
+
+div.messageSend form{
+    width: 80%;
+    padding: .5em;
+    background: green;
+    border-radius: 40px;
+}
+
+div.messageSend form input{
+    width: 80%;
+    padding: .5em;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+div.messageSend form input::placeholder{
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+div.messageAttachment{
+    display: flex;
+    width: 20%;
+}
+
+body > section > main > div > div.messageSend > div > img{
+    width: 20%;
+    opacity: .8;
+    margin: 0 1em;
+}
+
+@media screen and (max-width: 500px){
+    div.messageHead {
+        display: flex;
+        padding: .5em 1em
+    }
+
+    div.messageOptions {
+        width: 35%;
+        margin: 1em 0;
+    }
+
+    div.messageHead .profileImg img {
+        width: 20%;
+    }
+
+    div.messageContent {
+        padding: .5em .5em;
+    }
+
+    div.chat {
+        padding: .5em;
+        width: 90%;
+    }
+
+    div.chat p {
+        line-height: 1.3em;
+        font-size: 1rem;
+    }
+
+    div.chat.chat_dark {
+        margin-left: 10%;
+    }
+
+    div.messageSend {
+        padding: .5em .5em;
+    }
+
+    body > section > main > div > div.messageSend > div > img {
+        width: 26%;
+        opacity: .8;
+        margin: 0 .3em;
+    }
+
+    div.messageSend form {
+        width: 80%;
+        padding: .1em;
+    }
+
+    body > section > main > div > div.messageSend > form > input[type=text]{
+        font-size: 1rem;
+    }
+
+    body > section > main > div > div.messageSend > form > img{
+        display: none;
+    }
+
+
+}
+
+
+
+
+=======
+section.messages div.avatar {
+    display: none;
+}
+>>>>>>> 6f6029e8aee16ff9107f738b313215e7a3405877

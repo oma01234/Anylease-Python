@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	    <style>
+		   
+	    </style>
+        <meta name="theme-color" content="#21DA75" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static '/css/register.css' %}">
+	    <link rel="stylesheet" href="{% static '/css/details.css' %}">
+	    <link rel="stylesheet" href="{% static '/css/index.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        
+        <title>Anylease | Signup</title>
+    </head>
+    <body class="signup">
+        <div class="auth_flex">
+            <section class="left">
+                <img src="./assets/Pattern.png" alt="Pattern" class="absolute_pattern">
+                <a  id="anylease" href="/index.html"><img class="anyLimage" src="/assets/anyLimage.png" alt="" srcset=""></a>
+                <div class="text">
+                    <p>
+                        <b>Welcome!
+                        </b>Start leasing your equipment in few minutes!</p>
+                </div>
+
+            </section>
+
+            <section class="right">
+	            <h1><b>Sign up on AnyLease</b></h1>
+                <p>Already have an account? <a href="{% url 'login' %}">
+                        <b>Log in</b>
+                    </a>
+                </p>
+                    <section id="register" class="py-5">
+						<div class="col-lg-6">
+							<a href="{% url 'customer_register' %}"><h4><b>Register as customer</b></h4></a>
+						</div>
+						<div class="col-lg-6">
+							<a href="{% url 'client_register' %}"><h4><b>Register as client</b></h4></a>
+						</div>
+						
+					</section>
+            </section>
+        </div>
+    
+    </body>
+</html>

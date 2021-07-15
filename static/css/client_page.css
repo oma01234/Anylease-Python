@@ -1,0 +1,301 @@
+section.lender_dashboard .avatar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 1.6em 2.2em;
+    min-height: 2px;
+    align-items: center;
+}
+
+section.lender_dashboard .avatar img {
+    height: 24px;
+}
+
+section.lender_dashboard main {
+    padding: 1em calc(0.09 * 100vw);
+}
+
+section.lender_dashboard {
+    width: 84%;
+}
+
+.side_nav, .side_nav_mob {
+    width: 16%;
+    display: block;
+    position: sticky;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: green;
+    padding: 2em 1em;
+    overflow-y: scroll;
+}
+
+.side_nav::-webkit-scrollbar, .side_nav_mob::-webkit-scrollbar {
+    width: 2px;
+    background-color: lightgreen;
+}
+
+
+
+.side_nav::-webkit-scrollbar-thumb, .side_nav_mob::-webkit-scrollbar-thumb {
+    background-color: green;
+
+}
+
+::webkit-scrollbar-track {
+    background-color: red;
+}
+
+body.dashboard {
+    display: flex;
+}
+
+.side_nav img,  .side_nav_mob img{
+    height: 24px;
+    display: block;
+
+}
+
+.side_nav a, .side_nav_mob a {
+    margin: 2.2em 0;
+    padding: 0.8em;
+
+}
+
+.side_nav a:hover, .side_nav_mob a:hover {
+    opacity: 0.8;
+    border: 1px solid lightgreen;
+    border-radius: 5px;
+}
+
+body.dashboard p {
+    font-family: Montserrat;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 2em;
+}
+
+body.dashboard h3 {
+    font-weight: 600;
+    color: green;
+    font-size: 1em;
+    font-family: 'Open Sans';
+    color: #fff;
+    font-size: 1.4em;
+    margin-bottom: 3em;
+}
+
+body.dashboard .__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body.dashboard h2 {
+    font-weight: 700;
+    font-size: 2.4em;
+    color: body-text;
+    margin-bottom: 0.5em;
+}
+
+section.lender_dashboard h3 {
+    display: none;
+}
+
+
+body.dashboard .selected_Message a.Message {
+    border: 1px solid lightgreen;
+    border-radius: 5px;
+}
+
+body.dashboard .selected_Upload a.Upload {
+    border: 1px solid lightgreen;
+    border-radius: 5px;
+}
+
+body.dashboard .selected_Notification a.Notification {
+    border: 1px solid lightgreen;
+    border-radius: 5px;
+}
+
+body.dashboard .selected_Setting a.Setting {
+    border: 1px solid lightgreen;
+    border-radius: 5px;
+}
+
+body.dashboard .selected_Home a.Home {
+    border: 1px solid lightgreen;
+    border-radius: 5px;
+}
+
+section.lender_dashboard div.avatar-group {
+    display: flex;
+    min-height: 2px;
+    align-items: center;
+    color: green;
+}
+
+section.lender_dashboard div.avatar-group p {
+    font-size: 1em;
+    margin-right: 8px;
+    font-family: Montserrat;
+    text-transform: capitalize;
+}
+
+section.lender_dashboard h3 {
+    font-size: 1em;
+}
+
+section.lender_dashboard .product-flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+section.lender_dashboard div.product {
+    border-radius: 8px;
+    width: 200px;
+    margin: 24px 0px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.01);
+    box-shadow: 7px 7px 28px rgb(0 0 0 / 15%), -7px -7px 28px rgb(0 0 0 / 15%);
+}
+
+
+section.lender_dashboard div.product img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+section.lender_dashboard div.text {
+    padding: 16px;
+}
+
+section.lender_dashboard div.text b {
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: Montserrat;
+    text-align: left;
+    color: green;
+    line-height: 1.8em;
+}
+
+section.lender_dashboard div.text p {
+    color: body-text;
+    font-weight: 500;
+}
+
+section.lender_dashboard button {
+    background-color: green;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 1.3em 1.6em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 2em;
+}
+
+section.lender_dashboard button:hover {
+    opacity: 0.8;
+}
+
+section.lender_dashboard div.uploading {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+section.lender_dashboard div.uploading button {
+    position: absolute;
+    bottom: 24px;
+    background-color: lightgreen;
+    color: green;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid green; */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1), -5px -5px 10px rgba(0,0,0,0.1);
+    padding: 1em 3em;
+}
+
+section.upload img.line {
+    height: 2px;
+    width: 100%;
+}
+
+section.upload img.upload-space {
+    width: 100%;
+    margin-top: 3em;
+
+}
+
+section.lender_dashboard b.cancel {
+    color: green;
+    border: none;
+}
+
+
+@media (max-width: 900px) {
+    section.lender_dashboard div.product {
+        width: 30%;
+    }
+
+    section.lender_dashboard div.product img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 800px) {
+    body.dashboard h3 {
+        display: none;
+    }
+
+    section.lender_dashboard h3 {
+        display: block;
+        color: green;
+    }
+
+    section.lender_dashboard .avatar {
+        justify-content: space-between;
+    }
+
+
+    body.dashboard h2 {
+        font-weight: 700;
+        font-size: 2em;
+        color: body-text;
+        margin-bottom: 0.3em;
+    }
+
+    body.dashboard h3 {
+        margin-bottom: 0em;
+        display: flex;
+        min-height: 2px;
+        align-items: center;
+    }
+
+    section.lender_dashboard i.fa-bars{
+        margin-right: 8px;
+    }
+
+    section.lender_dashboard div.product {
+        width: 48%;
+    }
+
+    section.lender_dashboard div.product img {
+        height: 200px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    section.lender_dashboard div.product {
+        width: 100%;
+    }
+}

@@ -1,0 +1,86 @@
+.notificationPage {
+    background-color: #EBFCEF;
+    text-align: justify;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 16px;
+}
+
+#mainbox1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#context1 {
+    border-radius: 0.5em;
+    border: solid;
+    border-color: #DA370E;
+    margin: 3em;
+    height: 4cm;
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+#context2 {
+    border-radius: 0.5em;
+    border: solid;
+    border-color: #03A84E;
+    margin: 3em;
+    height: 4cm;
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+#context3 {
+    border-radius: 0.5em;
+    border: solid;
+    border-color: #03A84E;
+    margin: 3em;
+    height: 4cm;
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+#context4 {
+    border-radius: 0.5em;
+    border: solid;
+    border-color: #03A84E;
+    margin: 3em;
+    height: 4cm;
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+@media screen and (max-width:1270px) {
+    .notificationPage {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .notificationPage {
+        font-size: x-small;
+        white-space: normal;
+        /* padding-right: 1em; */
+        text-align: center;
+        margin-right: 1em;
+        line-height: 3px;
+    }
+    #context1 {
+        padding-right: 1.7em;
+    }
+    #context2 {
+        padding-right: 1.7em;
+    }
+    #context3 {
+        padding-right: 1.7em;
+    }
+    #context4 {
+        padding-right: 1.7em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .toptitle {
+        display: none;
+    }
+}

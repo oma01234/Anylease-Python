@@ -1,0 +1,23 @@
+{% load widget_tweaks %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lender Dashboard</title>
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static '/css/faq.css' %}">
+</head>
+<body>
+	<div class="form-group">
+		{{ form.as_p }}
+		{% csrf_token %}
+		{% for post in object_list %}
+			<h3>{{ post.Item_Category }}</h3>
+			<p>{{ post.Item_Name }}</p>
+			<img src="{{ post.Image.url }}" width="35%">
+		{% endfor %}
+	</div>
+</body>
+</html>

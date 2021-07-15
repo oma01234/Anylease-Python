@@ -1,0 +1,156 @@
+.fillText{
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: Montserrat;
+}
+.progre img{
+    height: 1px;
+    width:100% ;
+}
+
+form div.form-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+label{
+    display: block;
+    margin: 1rem 0;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
+}
+section.info div.info1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+div#deliver>div {
+    width: 50%;
+}
+
+section.info div.f45 {
+    width: 48%;
+}
+section.info input, section.info textarea, select{
+    width: 100%;
+    border: 0.5px solid input-stroke;
+    border-radius: 8px;
+    padding: 16px 24px;
+    font-family: 'Open Sans';
+    font-size: 0.9em;
+    outline: none;
+    background-color: transparent;
+}
+section.info div.avatar {
+    justify-content: space-between;
+}
+
+i.fa-arrow-left {
+    color: rgb(55, 66, 55);
+    padding: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+i.fa-arrow-left:hover {
+    background-color: lightgreen;
+}
+input:focus{
+    border: 2px solid #03A84E;
+}
+div#price{
+    display: flex;
+    justify-content: space-between;
+}
+
+#Dayprice,#weekprice,#monthprice{
+    width: 32%;
+}
+
+.next{
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+.nextForm{
+    padding: 1rem;
+    background-color: #03A84E;
+    color: white;
+    font-weight: 400;
+    border-radius: 5px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+
+
+}
+
+
+@media only screen and (max-width: 600px){
+    .fillText{
+        font-weight: 800;
+        font-size: 2rem;
+        font-family: Montserrat;
+    }
+
+    label{
+        display: block;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+    .info1{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    input{
+        border-radius: 5px;
+        padding: 0.75rem;
+        outline: none;
+        border: 1px solid #37474F;
+        font-family: Montserrat;
+        font-size: 1.2em;
+        letter-spacing: 0.7px;
+    }
+    input:focus{
+        border: 2px solid #03A84E;
+    }
+    .price{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #Dayprice,#weekprice,#monthprice{
+        width: 33%;
+    }
+
+    /* .next{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+    } */
+    .nextForm{
+        padding: 1rem;
+        background-color: #03A84E;
+        color: white;
+        font-weight: 400;
+        border-radius: 5px;
+
+
+    }
+
+}
+
+@media (max-width: 860px) {
+    section.upload main {
+        /* padding-right: 0 !important; */
+    }
+    section.info div.f45 {
+        width: 100%;
+    }
+}

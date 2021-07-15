@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       
+        <meta name="theme-color" content="#21DA75"/>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static '/css/logout.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Anylease | Lender Dashboard - Home</title>
+    </head>
+    <body class="dashboard">
+        <div class="side_nav">
+            <div class="__nav">
+                <h3 class="desk"><a  id="anylease" href="/index.html"><img class="anyLimage" src="/assets/anyLimage.png" alt="" srcset=""></a></h3>
+                <a href="/lender_dashboard/" class="Home"><img src="./../assets/Home.svg"/></a>`
+                <a href="/lender_dashboard/Notification.html" class="Notification"><img src="./../assets/Notification.svg"/></a>`
+                <a href="/lender_dashboard/Upload.html" class="Upload"><img src="./../assets/Upload.svg"/></a>`
+                <a href="/lender_dashboard/Setting.html" class="Setting"><img src="./../assets/Setting.svg"/></a>`
+                <a href="/lender_dashboard/Message.html" class="Message"><img src="./../assets/Message.svg"/></a>`
+
+
+            </div>
+
+        </div>
+        <div class="side_nav_mob"></div>
+
+        <section class="lender_dashboard">
+            <div class="avatar">
+                <h3><i class="fa fa-bars nav-menu" style="font-size:16px"></i>
+                    <b class="cancel" style="font-size:24px; margin-left: -20px; margin-right: 24px; padding: 4px;">&times;</b>
+                    AnyLease</h3>
+                <div class="avatar-group">
+                    <p></p>
+                    <img src="./../assets/Avatar.png" alt="">
+                </div>
+                
+            </div>
+            <main>
+                <h2>Logout</h2>
+                <p>Are you sure you want to logout?</p>
+                
+                <div class="outCancel">
+                    <a href="{% url 'login' %}" class="logMeOut"> Yes,log me out</a>
+                    <a href="#" class="cancel">No,cancel</a>
+                </div>
+            </main>
+
+        </section>
+
+        <script src="/js/bundle.js"></script>
+    </body>
+</html>

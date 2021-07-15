@@ -1,0 +1,292 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	    <style>
+	    </style>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Anylease | Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/00253a8f05.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{% static '/css/index.css' %}"/>
+	    <link rel="stylesheet" href="{% static '/css/details.css' %}">
+    </head>
+    <body>
+      <div class="detailH">
+        <a  id="anylease" href="/"><img class="anyLimage" src="{% static '/assets/anyLimage.png' %}" alt="" srcset=""></a>
+
+        <div class="links">
+        
+         <a class="navA" href="{% url 'index' %}">Home</a>
+         <a class="navA" href="#lease-process">How It Works</a>
+         <a class="navA" href="#lease-categories">Categories</a>
+         <a class="navA" href="{% url 'about' %}">About us</a>
+         <a class="navA" href="#">Lease</a>
+         <a class="navA" href="{% url 'faq' %}">FAQ</a>
+        </div>
+        <div class="loginSignin">
+            <a class="login" href="{% url 'login' %}">Log in</a>
+            <a class="getStart" href="{% url 'register' %}">Get Started</a>
+        </div>
+        <i class="fas fa-bars  " onclick="menu()" ></i>
+        <i class="fas fa-times" onclick="close()" ></i>
+</div>
+
+
+      
+
+      <main>
+        <section class="lease-info flex">
+          <div class="lease-info__details flex column">
+            <h2>Lease out your equipment and
+            make money off them</h2>
+            <p>Make money off your equipment that are no longer in use by leasing
+              them out for long or short-term use in agreement with your lessee.</p>
+            <a href="{% url 'register' %}"><button class="lease-get-started">Get Started</button></a>
+          </div>
+          <div class="lease-info--images">
+            <img class="lease-info--images__agreement" src="{% static '/assets/Agreement.png' %}" alt="">
+            <img class="lease-info--images__speech" src="{% static '/assets/speech bubble.png' %}" alt="">
+            <div class="lease-info--images__icons ">
+              <img class="lease-info--images__female-icon" src="{% static '/assets/character 1.png' %}" alt="">
+              <img class="lease-info--images__male-icon" src="{% static '/assets/character 2.png' %}" alt="">
+            </div>
+            <img class="lease-info--images__line" src="{% static '/assets/line.png' %}" alt="">
+            <img class="lease-info--images__ground" src="{% static '/assets/Vector.png' %}" alt="">
+          </div>
+        </section>
+
+        <section id="lease-process" class="lease-process">
+          <h1>How it works</h1>
+          <div class="lease-process--data flex row">
+            <div class="lease-process--data-items flex column col-md-4 col-sm-4 col-xs-12">
+              <img class="lease-process--data-items__icon" src="{% static '/assets/Group 69.png' %}" alt="">
+              <img class="lease-process--data-items__icon2" src="{% static '/assets/lease-icon.png' %}" alt="">
+              <h3 id="lease-head1">Lease</h3>
+              <p class="lease-process--data-items__details">Lease out your equipments and get paid by a lessee at your own agreeable
+                price.</p>
+              <div class="lease-process--data__more-info lease-lease-icon flex">
+                <a href="{% url 'register' %}"><p>Learn More</p></a>
+                <a href="{% url 'register' %}"><img src="{% static '/assets/forward-arrow.png' %}" alt=""></a>
+              </div>
+            </div>
+
+            <div class="lease-process--data-items flex column col-md-4 col-xs-12">
+              <img class="lease-process--data-items__icon" src="{% static '/assets/Group 497.png' %}" alt="">
+
+              <h3>Rent</h3>
+              <p class="lease-process--data-items__details">Rent equipment you need from lenders and return on a fixed date as agreed with your lender.</p>
+
+              <div class="lease-process--data__more-info lease-rent-icon flex">
+                <a href="{% url 'register' %}"><p>Learn More</p></a>
+                <a href="{% url 'register' %}"><img src="{% static '/assets/forward-arrow.png' %}" alt=""></a>
+              </div>
+            </div>
+
+            <div class="lease-process--data-items flex column col-md-4 col-xs-12">
+              <img class="lease-process--data-items__icon" src="{% static '/assets/Group 73.png' %}" alt="">
+
+              <h3>Sign</h3>
+              <p class="lease-process--data-items__details">An agreement will be signed on every lease between the lender and the lessee.</p>
+
+              <div class="lease-process--data__more-info lease-sign-icon flex">
+                <a href="{% url 'register' %}"><p>Learn More</p></a>
+                <a href="{% url 'register' %}"><img src="{% static '/assets/forward-arrow.png' %}" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="lease-categories" class="lease-categories row">
+          <h1>Categories</h1>
+          <div class="lease-categories--data flex row">
+            <div class="lease-categories--data__items col-md-4 col-xs-12">
+              <a href="{% url 'details' %}">
+                <img src="{% static '/assets/Rectangle 647.png' %}" alt="">
+              </a>
+              <p>Building/Construction Equipment</p>
+            </div>
+
+            <div class="lease-categories--data__items col-md-4 col-xs-12">
+              <a href="{% url 'details' %}">
+              <img src="{% static '/assets/engineer.png' %}" alt="">
+            </a>
+              <p>Electrical Equipment</p>
+            </div>
+
+            <div class="lease-categories--data__items col-md-4 col-xs-12">
+              <a href="{% url 'details' %}">
+              <img src="{% static '/assets/Rectangle 655.png' %}.png" alt="">
+              </a>
+              <p>Musical Equipment</p>
+            </div>
+          </div>
+
+          <div class="lease-categories--data flex row">
+            <div class="lease-categories--data__items col-md-4 col-xs-12">
+              <a href="{% url 'details' %}">
+              <img src="{% static '/assets/Rectangle 653.png' %}" alt="">
+              </a>
+              <p>Audio/Visual Equipment</p>
+            </div>
+
+            <div class="lease-categories--data__items col-md-4 col-xs-12">
+              <a href="{% url 'details' %}">
+              <img src="{% static '/assets/Rectangle 662.png' %}" alt="">
+              </a>
+              <p>IT Equipment</p>
+            </div>
+
+            <div class="lease-categories--data__items col-md-4 col-xs-12">
+              <a href="{% url 'details' %}">
+              <img src="{% static '/assets/Rectangle 659.png' %}" alt="">
+              </a>
+              <p>Events Equipment</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="featured-equipments" class="featured-equipments">
+          <h1>Featured Equipments</h1>
+          <div class="featured-equipments--data flex row">
+            <div class="featured-equipments--data__items col-md-4 col-xs-12">
+              <div id="featured-equipments1">
+                <a href="{% url 'details' %}">
+                <img id="featured1" src="{% static '/assets/featured-equipment1.png' %}" alt="">
+                </a>
+                <p>Nikon Camera</p>
+              </div>
+              <div id="view-details1" class="view-details1 flex column">
+                <h5><a href="{% url 'details' %}">View details</a></h5>
+                <hr>
+              </div>
+            </div>
+
+            <div class="featured-equipments--data__items col-md-4 col-xs-12">
+              <div id="featured-equipments2">
+                <a href="{% url 'details' %}">
+                <img id="featured2" src="{% static '/assets/featured-equipment2.png' %}" alt="">
+                </a>
+                <p>Party Chairs</p>
+              </div>
+              <div id="view-details2" class="view-details2">
+                <a href="{% url 'details' %}"><h5>View details</h5></a>
+                <hr>
+              </div>
+            </div>
+
+            <div class="featured-equipments--data__items col-md-4 col-xs-12">
+              <div id="featured-equipments3">
+                <a href="{% url 'details' %}">
+                <img id="featured3" src="{% static '/assets/featured-equipment3.png' %}" alt="">
+                </a>
+                <p>Lawn Mower</p>
+              </div>
+              <div id="view-details3" class="view-details3 flex column">
+                <a href="{% url 'details' %}"><h5>View details</h5></a>
+                <hr>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="lease-feedback">
+          <h1>Hear from Others</h1>
+          <div class="lease-feedback--data flex row">
+            <div class="lease-feedback--data__items col-md-4 col-xs-12">
+              <p>AnyLease is the best platform to rent
+                 equipment you need. I found exactly
+                 what I was looking for!</p>
+              <div class="lease-feedback--client flex">
+                <img src="{% static '/assets/Ellipse 42.png' %}" alt="">
+                <h5>Tony</h5>
+              </div>
+            </div>
+
+            <div class="lease-feedback--data__items col-md-4 col-xs-12">
+              <p>I no longer have to keep a pile of my
+                equipment. I’ve found a great
+                platform to lease them!
+              <div class="lease-feedback--client lease-feedback--image2 flex">
+                <img src="{% static '/assets/Ellipse 44.png' %}" alt="">
+                <h5>Anita</h5>
+              </div>
+            </div>
+
+            <div class="lease-feedback--data__items lease-feedback3 col-md-4 col-xs-12">
+              <p>AnyLease signing agreement is one
+                 of the best things to happen to me.
+                 Thanks for aiding trust.</p>
+              <div class="lease-feedback--client flex">
+                <img src="{% static '/assets/Ellipse 46.png' %}" alt="">
+                <h5>Tomi Thomas</h5>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="downloadInfo" id="downloadInfo">
+          <div class="elipse">
+              <img src="/assets/Pattern.png" alt="" srcset="">
+          </div>
+          <div class="downlink">
+              <div class="downloadSec">
+
+                  <p class="download"> Download the AnyLease App</p>
+                  <p class="getOur">
+                      Get our app from the google play store or apple store  and start <br> leasing/renting equipment right from the comfort of your home!
+                  </p>
+                  <div class="appgoogle" >
+                      <a href=""><img id="googleimg" src="{% static '/assets/google.png' %}" alt="" srcset=""></a>
+                      <a href=""><img id="appstoreimg" src="{% static '/assets/Appstore.png' %}" alt="" srcset=""></a>
+                  </div>
+              </div>
+              <div class="bgimg">
+                  <img src="{% static '/assets/phone.png' %}" alt="">
+              </div>
+          </div>
+      </div>
+
+      <footer>
+        <div class="rights">
+          <h4>AnyLease</h4>
+          <p class="Rrights">© 2021 AnyLease . All rights reserved</p>
+
+            <a href="" id="twitter"> <i class="fab fa-twitter"></i> </a>
+            <a href="" id="instagram"> <i class="fab fa-instagram"></i> </a>
+            <a href="" id="facebook"> <i class="fab fa-facebook-f"></i> </a>
+
+        </div>
+        <div class="works">
+            <h4>How it works</h4>
+            <div class="LRS">
+                <a href="{% url 'register' %}" id="footer-link">Lease</a>
+                <a href="{% url 'register' %}" id="footer1-link">Rent</a>
+                <a href="{% url 'register' %}" id="footer2-link">Sign</a>
+            </div>
+        </div>
+        <div class="categories">
+            <h4>Categories</h4>
+            <div class="CFA">
+                <a href="" id="footer3-link">Categories</a>
+                <a href="" id="footer4-link">Featured Categories</a>
+                <a href="" id="footer5-link">Ambassadors</a>
+            </div>
+        </div>
+        <div class="help">
+            <h4>Help</h4>
+            <div class="FGC">
+                <a href="{% url 'faq' %}" id="footer6-link">FAQ's</a>
+                <a href="" id="footer7-link">Get Help</a>
+                <a href="" id="footer8-link">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+      </main>
+    </body>
+    <script src="/js/bundle.js"></script>
+</html>

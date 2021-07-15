@@ -1,0 +1,224 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+	
+	</style>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+<script src="https://kit.fontawesome.com/d31d163307.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="{% static '/css/details.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>AnyLease | Details</title>
+
+</head>
+<body>
+
+    <div class="detailH">
+            <a  id="anylease" href=""><img class="anyLimage" src="{% static '/assets/anyLimage.png' %}" alt="" srcset=""></a>
+
+            <div class="links">
+            
+             <a class="navA" href="{% url 'index' %}">Home</a>
+             <a class="navA" href="">How It Works</a>
+             <a class="navA" href="">Categories</a>
+             <a class="navA" href="{% url 'about' %}">About us</a>
+             <a class="navA" href="">Lease</a>
+             <a class="navA" href="{% url 'faq' %}">FAQ</a>
+            </div>
+            <div class="loginSignin">
+                <a class="login" href="{% url 'login' %}">Log in</a>
+                <a class="getStart" href="{% url 'register' %}">Get Started</a>
+            </div>
+            <i class="fas fa-bars  " onclick="menu()" ></i>
+            <i class="fas fa-times" onclick="close()" ></i>
+    </div>
+    <div class="item">
+        <div class="itemImg">
+            <img class="itemImg" src="{% static '/assets/Photo-image.png' %}" alt="item image" srcset="">
+        </div>
+    </div>
+    
+    <div class="Det">
+        <div class="de">
+            <div class="detail">
+                <div class="dash1"></div>
+                <div class="dot1"></div>
+            </div>
+            <div class="DetailOfItem">
+                <h3 class="hh3"> Details </h3>
+               <p class="itemwords">
+                   The model of the featured Nikon Camera is a great fit for capturing your events,
+                   ceremonies and can even be used for personal use. The quality of this camera remains the same and many lessee’s have reported great success with what they used it for.
+                    We are sure you’ll have the same success reports.
+
+               </p>
+           </div>
+
+
+        </div>
+        <div class="de">
+            <div class="detail">
+                <div class="dash2"></div>
+                <div class="dot1"></div>
+            </div>
+            <div class="LenderInfo">
+                <h3 class="hh3"> Lender Information </h3>
+                <p class="p-texts"> Name: <span class="LenderName" > Mr. Chukwuemeka</span></p>
+                <p class="p-texts">Location:  <span class="lenderLocation" > Ikeja, Lagos</span></p>
+                <p class="p-texts">Price: <span class="dayPrice">20,000</span>    /Day    <span class="weekPrice">50,000   </span>  /week  <span class="MonthPrice">80,000  </span>    /Month     </p>
+                <p class="p-texts"> Contact: <a id="phone1" href=""> 08080000000 </a>  <a id="phone2" href=""> 08089009999 </a>   </p>
+
+                <p class="p-texts"> Delivery:
+                 <div class="deliav">
+                    <label class="avail">Available
+                        <input type="radio" checked="checked"  name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="avail">Not Available
+                        <input type="radio" id="ra2" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                 </div>
+            </div>
+
+        
+
+
+
+        </div>
+
+        <div class="de">
+            <div class="detail">
+                <div class="dash3"></div>
+                <div class="dot1"></div>
+            </div>
+            <div class="yourInfo">
+                <h3 class="hh3"> Your Information </h3>
+                <p class="p-texts"> Name: <span class="LendeeName" > Sammy Thomas</span></p>
+                <p class="p-texts"> <span class="loca">Location:</span> <input type="text" name="lendeeLocation" id="LendeeLocation"> </p>
+    
+               <div class="quantity"> Qty: <input type="number" min="1" value="1" step="1" name="" id="qty"> </div>
+
+               <div class="deliveryDetail">
+                    <div class="deliveryD">
+                        <p> Delivery Date </p>
+                        <div class="selectdelivery">
+                         
+                            <select name="DeliveryDay" id="SelectDay" >
+                                <option value="0">15th july </option>
+                            </select>
+                           
+                        </div>
+                    </div>
+
+                    <div class="deliveryT">
+                        <p> Delivery Time </p>
+                        <select name="Deliverytime" id="selectTime" >
+                            <option value="0"> 8am -  8:30pm </option>
+                            <option value="1"> 11am - 1pm </option>
+                            <option value="2"> 2pm - 4pm </option>
+                            <option value="3"> 4pm - 7pm</option>
+                            <option value="4"> 8am -  8:30pm </option>
+                        </select>
+                    </div>
+               </div>
+            </div>
+
+          
+           
+      
+
+
+     </div>
+     
+
+     <div class="agreementR">
+        <div class="detail">
+            <div class="dash4"></div>
+            <div class="dot4"></div>
+        </div>
+        <span class="agreelinktext">  <input type="checkbox" required name="agree" id="agree">  Do you agree to the terms and conditions of this lease <a href="" class="agreelink">here</a> </span>
+    </div>
+    <div>
+        <input type="button" id="rentEquip" value="Rent Equipment">
+    </div>
+
+    
+    
+    </div>
+    
+  
+    
+  
+
+
+
+
+    <div class="downloadInfo">
+        <div class="elipse">
+            <img src="{% static '/assets/Pattern.png' %}" alt="" srcset="">
+        </div>
+        <div class="downlink">
+            <div class="downloadSec">
+            
+                <p class="download"> Download the AnyLease App</p>
+                <p class="getOur">
+                    Get our app from the google play store or apple store  and start <br> leasing/renting equipment right from the comfort of your home!
+                </p>
+                <div class="appgoogle" >
+                    <img id="googleimg" src="{% static '/assets/google.png' %}" alt="" srcset="">
+                    <img id="appstoreimg" src="{% static '/assets/Appstore.png' %}" alt="" srcset="">
+                </div>
+            </div>
+            <div class="bgimg">
+                <img src="{% static '/assets/phone.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="rights">
+          <h4>AnyLease</h4>
+          <p class="Rrights">© 2021 AnyLease . All rights reserved</p>
+          
+            <a href=""> <i class="fab fa-twitter"></i> </a>
+            <a href=""> <i class="fab fa-instagram"></i> </a>
+            <a href=""> <i class="fab fa-facebook-f"></i> </a>
+         
+        </div>
+        <div class="works">
+            <h4>How it works</h4>
+            <div class="LRS">
+                <a href="">Lease</a>
+                <a href="">Rent</a>
+                <a href="">Sign</a>
+            </div>
+        </div>
+        <div class="categories">
+            <h4>Categories</h4>
+            <div class="CFA">
+                <a href="">Categories</a>
+                <a href="">Featured Categories</a>
+                <a href="">Ambassadors</a>
+            </div>
+        </div>
+        <div class="help">
+            <h4>Help</h4>
+            <div class="FGC">
+                <a href="{% url 'faq' %}">FAQ's</a>
+                <a href="">Get Help</a>
+                <a href="">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

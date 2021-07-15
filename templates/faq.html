@@ -1,0 +1,185 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+	
+	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lease out your equipment and make money off them!">
+
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="{% static '/css/faq.css' %}">
+	<link rel="stylesheet" href="{% static '/css/details.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+    <title>Anylease | FAQ</title>
+</head>
+
+<body>
+    <div class="detailH">
+        <a  id="anylease" href=""><img class="anyLimage" src="{% static '/assets/anyLimage.png' %}" alt="" srcset=""></a>
+
+        <div class="links">
+        
+         <a class="navA" href="{% url 'index' %}">Home</a>
+         <a class="navA" href="">How It Works</a>
+         <a class="navA" href="">Categories</a>
+         <a class="navA" href="{% url 'about' %}">About us</a>
+         <a class="navA" href="">Lease</a>
+         <a class="navA" href="{% url 'faq' %}">FAQ</a>
+        </div>
+        
+        <div class="loginSignin">
+            <a class="login" href="{% url 'login' %}">Log in</a>
+            <a class="getStart" href="{% url 'register' %}">Get Started</a>
+        </div>
+	        <i class="fas fa-bars  " onclick="menu()" ></i>
+	        <i class="fas fa-times" onclick="close()" ></i>
+		</div>
+
+    <div class="faq-search-flex">
+            <div class="background-color">
+                <div class="faq">
+                    <h2>Frequently Asked Question</h2>
+                    <p>Here are some of the most common questions</p>
+                </div>
+                
+                <div class="searchbox">
+                    <form action="">
+                        <input type="text" placeholder="Search for a question" name="Search">
+                    </form>
+                </div>
+            </div>
+
+    </div>
+
+
+
+   <div class="Questions">
+
+    <div class="question-container">
+        <div class="question">
+            <p>What is AnyLease?</p>
+        </div>
+
+        <div class="answers">We are a group of company that helps people lease out their equipment and make money from it</div>
+    </div>
+    
+    <div class="question-container">
+
+        <div class="question">
+            <p>What is the sign agreement?</p>
+        </div>
+
+        <div id="answers" class="answers">
+
+        <p>The sign agreement is an agreement that will be signed on every lease between the lender and the lessee. It is an agreement attached to every equipment a lessee decides to rent. This agreement is put in place so as to avoid fraudulent transactions between the two parties.</p>
+
+        </div>
+
+    </div>
+
+    <div class="question-container">
+        <div class="question">
+            <p>Are there referral options?</p>
+        </div>
+
+        <div class="answers">Yes, We are currently offering and giving out commissions for every person you referred to us</div>
+    </div>
+
+    <div class="question-container">
+        <div class="question">
+            <p>Is there a fixed price on every equipment?</p>
+        </div>
+
+        <div class="answers">No, The price to each equipment are not fixed and depends on the equipment you bring to us</div>
+
+    </div>
+
+    <div class="question-container">
+        <div class="question">
+            <p>What kind of equipment can be leased?</p>
+        </div>
+
+        <div class="answers">Any equipment you can ever think of can be leased with us, to get started kindly <a style="text-decoration: none;  color: green;" href="signup.html">sign-up here</a></div>
+
+    </div>
+
+    <div class="question-container">
+        <div class="question">
+            <p>How do I report a fraudulent encounter? </p>
+        </div>
+
+        <div  class="answers">If you ever notice some unusual behaviour on your account, Kindly contact the customer care support immediately</div>
+    </div>
+
+   </div>
+
+
+    <div class="downloadInfo">
+        <div class="elipse">
+            <img src="{% static '/assets/Pattern.png' %}" alt="" srcset="">
+        </div>
+        <div class="downlink">
+            <div class="downloadSec">
+            
+                <p class="download"> Download the AnyLease App</p>
+                <p class="getOur">
+                    Get our app from the google play store or apple store  and start <br> leasing/renting equipment right from the comfort of your home!
+                </p>
+                <div class="appgoogle" >
+                    <img id="googleimg" src="{% static '/assets/google.png' %}" alt="" srcset="">
+                    <img id="appstoreimg" src="{% static '/assets/Appstore.png' %}" alt="" srcset="">
+                </div>
+            </div>
+            <div class="bgimg">
+                <img src="{% static '/assets/phone.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="rights">
+          <h4>AnyLease</h4>
+          <p class="Rrights">© 2021 AnyLease . All rights reserved</p>
+          
+            <a href=""> <i class="fab fa-twitter"></i> </a>
+            <a href=""> <i class="fab fa-instagram"></i> </a>
+            <a href=""> <i class="fab fa-facebook-f"></i> </a>
+         
+        </div>
+        <div class="works">
+            <h4>How it works</h4>
+            <div class="LRS">
+                <a href="">Lease</a>
+                <a href="">Rent</a>
+                <a href="">Sign</a>
+            </div>
+        </div>
+        <div class="categories">
+            <h4>Categories</h4>
+            <div class="CFA">
+                <a href="">Categories</a>
+                <a href="">Featured Categories</a>
+                <a href="">Ambassadors</a>
+            </div>
+        </div>
+        <div class="help">
+            <h4>Help</h4>
+            <div class="FGC">
+                <a href="{% url 'faq' %}">FAQ's</a>
+                <a href="">Get Help</a>
+                <a href="">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

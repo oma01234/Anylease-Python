@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="theme-color" content="#21DA75" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/css/notify.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Anylease | Notification</title>
+</head>
+
+<body class="dashboard">
+    <div class="side_nav selected_Notification">
+        <div class="__nav">
+            <h3 class="desk">AnyLease</h3>
+            <a href="{% url 'client_page' %}" class="Home"><img src="./../assets/Home.svg" /></a>`
+            <a href="{% url 'notify' %}" class="Notification"><img src="./../assets/Notification.svg" /></a>`
+            <a href="/lender_dashboard/Upload.html" class="Upload"><img src="./../assets/Upload.svg" /></a>`
+            <a href="{% url 'settings' %}" class="Setting"><img src="./../assets/Setting.svg" /></a>`
+            <a href="{% url 'messages' %}" class="Message"><img src="./../assets/Message.svg" /></a>`
+
+
+        </div>
+
+    </div>
+    <section class="lender_dashboard">
+        <div class="avatar">
+            <h3>AnyLease</h3>
+            <img src="{% static '/assets/Avatar.png' %}" alt="">
+        </div>
+        <main>
+            <div class="notificationPage">
+                <!-- start here -->
+
+                <div id="mainbox1">
+                    <h1>Notification</h1>
+                </div>
+                <div id="mainbox2">
+                    <div id="context1">
+                        <h4>Camera Rental</h4>
+                        <p class="toptitle">
+                            You have a pending order. Tick tock, Tick Tock.
+                        </p>
+                    </div>
+                    <div id="context2">
+                        <h4>Lease Request</h4>
+                        <p class="toptitle">
+                            Some of your listed items available for rent has been selected.<br> Move selected items to reasy to lease within 24 hours.
+                        </p>
+                    </div>
+                    <div id="context3">
+                        <h4>Latest App Update</h4>
+                        <p class="toptitle">
+                            Update your app within 24hours and get our latest user centered feature<br> designed just for you..
+                        </p>
+                    </div>
+                    <div id="context4">
+                        <h4>Payment Alert</h4>
+                        <p class="toptitle">
+                            Your account has been credited, update your item status to delivered.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+
+    </section>
+
+    <script src="/js/bundle.js"></script>
+</body>
+
+</html>

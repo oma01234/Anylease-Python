@@ -1,0 +1,41 @@
+.logMeOut{
+    border: 1px solid #E30C26;
+    padding: 1rem;
+    background-color:#E30C26 ;
+    color: white;
+    margin-left: 2rem;
+   margin-bottom: 1rem;
+    border-radius: 5px;
+}
+.logMeOut:focus{
+    background-color:white ;
+    color:#E30C26 ;
+}
+.logMeOut:hover{
+    background-color: rgb(197, 173, 173);
+}
+.outCancel{
+    margin-top: 3rem;
+    display: flex;
+}
+.cancel{
+    border: 1px solid #E30C26;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: #03A84E;
+    margin-left: 2rem;
+    border-radius: 5px;
+}
+.cancel:focus{
+    border: 1px solid green;
+    color: whitesmoke;
+}
+
+
+
+@media only screen and (max-width: 600px){
+
+    .outCancel{
+        flex-direction: column;
+    }
+}

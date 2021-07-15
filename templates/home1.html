@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="{% static '/css/upload.css' %}">
+	<meta charset="UTF-8">
+	<title>Anylease</title>
+</head>
+	<body class="dashboard">
+        <div class="side_nav selected_Upload">
+            <div class="__nav">
+                <h3 class="desk">AnyLease</h3>
+                <a href="/lender_dashboard/" class="Home"><img src="./../assets/Home.svg"/></a>
+                <a href="/lender_dashboard/Notification.html" class="Notification"><img src="./../assets/Notification.svg"/></a>
+                <a href="/lender_dashboard/Upload.html" class="Upload"><img src="./../assets/Upload.svg"/></a>
+                <a href="/lender_dashboard/Setting.html" class="Setting"><img src="./../assets/Setting.svg"/></a>
+                <a href="/lender_dashboard/Message.html" class="Message"><img src="./../assets/Message.svg"/></a>
+
+
+            </div>
+            
+
+        </div>
+        <div class="side_nav_mob"></div>
+            <section class="lender_dashboard upload">
+                <div class="avatar">
+                    <h3><i class="fa fa-bars nav-menu" style="font-size:16px"></i>
+                        <b class="cancel" style="font-size:24px; margin-left: -20px; margin-right: 24px; padding: 4px;">&times;</b>
+                        AnyLease</h3>
+                    <div class="avatar-group">
+                        <p></p>
+                        <img src="./../assets/Avatar.png" alt="">
+                    </div>
+                </div>
+                <main>
+                    <h2>Lease Your Equipment</h2>
+                    <img src="./../assets/Progress-bar-1.png" class="line" alt="">
+                    <div class="uploading">
+                        <img class="upload-space" src="./../assets/Upload-space.png" alt="">
+                        <input type="file" name="file" id="file" accept="image/*" multiple>
+
+                        <button class="upload" >Upload</button>
+                    </div>
+
+                    <div class="uploaded-images"></div>
+                    
+                    <button class="goNext disabled">Next</button>
+                </main>
+    
+            </section>
+
+        
+
+
+            <section class="lender_dashboard info">
+                <div class="avatar">
+                    <h3>
+                        <i class="fa fa-bars nav-menu" style="font-size:16px"></i>
+                        <b class="cancel" style="font-size:24px; margin-left: -20px; margin-right: 24px; padding: 4px;">&times;</b>
+                        AnyLease</h3>
+    
+                    <img src="./../assets/Avatar.png" alt="">
+                </div>
+                <main>
+    
+                    <h2>Lease your equipment</h2>
+                    <div class="progre">
+                        <img src="./../assets/Progress-bar-2.png" class="line" alt="">
+                    </div>
+                    <p class="fillText">Fill equipment information</p>
+    
+                    <section class="product-info">
+                        <div class="form-container">
+                            <div class="info1 f45">
+                                <label for="name">
+                                    Name
+                                </label>
+                                <input type="text" name="name" id="name" placeholder="E.g John doe" required>
+                            </div>
+                            <div class="info1 f45">
+                                <label for="location">
+                                    Location
+                                </label>
+                                <input type="text" id="location" placeholder="E.g Ikeja,Lagos" required>
+                            </div>
+                            <div class="info1">
+                                <label for="price">
+                                    Price
+                                </label>
+                                <input type="text" id="price" placeholder="Price per day" required>
+                            </div>
+                            <div class="info1">
+                                <label for="phone">Contact number</label>
+                                <input type="tel" name="phone" required id="phone" placeholder="E.g +234000000111">
+                            </div>
+                            <label>Delivery</label>
+                            <div id="deliver" class="deliav">
+    
+                                <div>
+                                    <label class="avail">Available
+                                        <input type="radio" checked="checked" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+    
+                                <label class="avail">Not Available
+                                    <input type="radio" id="delivery" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="info1">
+                                <label for="category">
+                                    Category
+                                </label>
+                                <select name="category" id="category">
+                                                                                  <option value="building/construction equipment">Building/construction equipment</option>
+                                <option value="electrical equipment">Electrical equipment</option>
+                                <option value="musical equipment">Musical equipment</option>
+                                <option value="audio/visual equipment">Audio/visual equipment</option>
+                                <option value="it equipment">IT equipment</option>
+                                <option value="events equipment">Events equipment</option>
+                                <option value="others">Others</option>
+    
+                            </select>
+                        </div>
+                        <textarea name="aboutEquipment" id="aboutEquipment" cols="50" rows="8" placeholder="What is this equipment about?..."></textarea>
+                        <b class="uploadError"></b>
+                        <div class="next">
+                            <a href="./../lender_complete.html"><button class="send-product">Next</button></a>
+                            
+    
+                        </div>
+                        </div>
+                    </section>
+                </main>
+    
+            </section>
+        <script src="/js/bundle.js"></script>
+    
+    </body>
+</html>
+

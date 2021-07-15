@@ -1,0 +1,239 @@
+.__main{
+    padding: 0 !important;
+}
+
+
+
+
+.settings{
+    display: flex;
+}
+.Setting_options{
+
+
+    display: flex;
+    flex-direction: column;
+
+}
+.settingProfile,.settingNotification,.settingnewPass,.settingFaq,.RateUs,.settingAbout,.settingHelp,.settingLogOut,.deleteSection{
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: #191414;
+
+}
+
+.deleteSection{
+    margin: 1rem;
+    margin-top: 10rem;
+
+    border: 1px solid green;
+    background-color: rgba(250, 221, 221, 0.974);
+}
+.settingProfile:focus,.settingNotification:focus,.settingnewPass:focus,.settingFaq:focus,.RateUs:focus,.settingAbout:focus,.settingHelp:focus,.settingLogOut:focus,.deleteSection:focus{
+    border: 1px solid green;
+    background-color: rgb(255, 255, 255);
+}
+.settingProfile:active,.settingNotification:active,.settingnewPass:active,.settingFaq:active,.RateUs:active,.settingAbout:active,.settingHelp:active,.settingLogOut:active,.deleteSection:active{
+    border: 1px solid green;
+    background-color: rgb(255, 255, 255);
+}
+.deleteSection{
+    color: red;
+}
+.settingContent{
+    padding: 1rem;
+    padding-left: 2rem;
+    border-left: 2px solid rgba(25, 20, 20, 0.51);
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    flex-direction: column;
+}
+.editProfileP{
+    text-align: start;
+    margin-left: 2rem;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.editProfileimg {
+    position: relative;
+}
+.editProfileimg .profileimg{
+    width: 10rem;
+   position: absolute;
+   top: 2rem;
+   left: 8rem;
+}
+.editbtnimg{
+    width: 2rem;
+    position: absolute;
+    top: 10rem;
+    left: 15rem;
+    background-color: green;
+    border-radius: 50%;
+}
+.editprofileform{
+    margin-top: 15rem;
+    margin-left: 2rem;
+}
+#editfullname,#editemail,#editcontact,#editaddress,#editcity,#editstate,#editcountry{
+    width: 70%;
+    padding: 1rem;
+    outline: none;
+    border-radius: 10px;
+}
+
+
+.gender{
+    display: flex;
+    width: 6rem;
+}
+.gendername{
+    font-weight: 600;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.settingContent2{
+    padding: 1rem;
+    padding-left: 2.8rem;
+    border-left: 2px solid rgba(25, 20, 20, 0.51);
+
+}
+.deletewords{
+    margin-top: 2rem;
+    font-size: 1.4rem;
+
+}
+
+.deletebtns{
+    margin-top: 2rem;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+.yesDelete{
+    color: white;
+    background-color: #E30C26;
+    border: 1px solid green;
+    padding: 1rem;
+
+    border-radius: 6px;
+}
+.yesDelete:focus{
+    border: 1px solid white;
+}
+.noCancel{
+    border: 1px solid green;
+    padding: 1rem;
+    color: #E30C26;
+    background-color: #c0cec6f8;
+    border-radius: 6px;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    .__main{
+        padding: 0 !important;
+    }
+
+    .settings{
+        display: flex;
+    }
+    .Setting_options{
+
+
+        display: flex;
+        flex-direction: column;
+
+    }
+    .settingProfile,.settingNotification,.settingnewPass,.settingFaq,.RateUs,.settingAbout,.settingHelp,.settingLogOut,.deleteSection{
+        margin-top: 2rem;
+        margin-right: 2rem;
+        padding: 0.5rem;
+        font-family: 'Montserrat', 'sans-serif';
+        font-size: 1.1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #191414;
+
+    }
+    .settingProfile:focus,.settingNotification:focus,.settingnewPass:focus,.settingFaq:focus,.RateUs:focus,.settingAbout:focus,.settingHelp:focus,.settingLogOut:focus,.deleteSection:focus{
+        border: 1px solid green;
+        background-color: whitesmoke;
+    }
+    .settingContent{
+        padding: 0rem;
+        padding-left: 0.5rem;
+        border-left: 2px solid rgba(25, 20, 20, 0.51);
+        display: flex;
+        width: 70%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .deleteSection{
+        color: red;
+    }
+    .editProfileP{
+        text-align: start;
+        margin-left: 0.8rem;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    .editProfileimg {
+        position: relative;
+    }
+    .editProfileimg .profileimg{
+        width: 7rem;
+       position: absolute;
+       top: 2rem;
+       left: 2rem;
+    }
+    .editbtnimg{
+        width: 2rem;
+        position: absolute;
+        top: 8rem;
+        left: 6rem;
+        background-color: green;
+        border-radius: 50%;
+    }
+    .editprofileform{
+        margin-top: 10rem;
+        margin-left: 1rem;
+    }
+    #editfullname,#editemail,#editcontact,#editaddress,#editcity,#editstate,#editcountry{
+        width: 70%;
+        padding: 0.6rem;
+        outline: none;
+        border-radius: 10px;
+    }
+
+
+    .gender{
+        display: flex;
+        width: 5rem;
+        flex-direction: column;
+    }
+    .gendername{
+        font-weight: 600;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    .deletebtns{
+        flex-direction: column;
+    }
+    .noCancel{
+        margin-top: 2rem;
+    }
+   .deletebtns{
+    margin-top: 2rem;
+    font-size: 1rem;
+   }
+
+}
+}
